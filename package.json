@@ -1,0 +1,31 @@
+{
+  "name": "playwright-visual-regression",
+  "version": "1.0.0",
+  "description": "Production-grade Playwright Visual Regression Framework for Interactive Web Applications",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:visual": "playwright test --grep @visual",
+    "test:update": "playwright test --update-snapshots",
+    "test:ci": "playwright test --reporter=html,json,./src/reporters/slack-reporter.ts",
+    "test:headed": "playwright test --headed",
+    "test:debug": "PWDEBUG=1 playwright test",
+    "approve": "node scripts/approve-snapshots.js",
+    "report": "playwright show-report",
+    "clean": "rimraf test-results playwright-report snapshots-pending",
+    "lint": "eslint src tests --ext .ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/node": "^20.14.0",
+    "eslint": "^9.6.0",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.5.2"
+  }
+}

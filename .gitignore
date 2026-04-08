@@ -1,0 +1,25 @@
+node_modules/
+dist/
+
+# Test artifacts (do not commit)
+test-results/
+playwright-report/
+snapshots-pending/
+
+# Auth state (contains secrets)
+.playwright/
+
+# Environment secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/settings.json
+.idea/
+
+# ─── DO commit these ──────────────────────────────────────────────────────────
+# snapshots/   ← approved baselines (source of truth)
+# .env.example ← template without secrets
