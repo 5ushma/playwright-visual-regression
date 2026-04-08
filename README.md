@@ -1,6 +1,6 @@
 Playwright Visual Regression Testing Framework
 
-A production-grade visual regression testing framework built using Playwright + TypeScript, designed to ensure UI consistency across browsers, viewports, and dynamic content scenarios.
+Built a production-grade visual regression testing framework that detects UI inconsistencies across browsers and devices with pixel-level precision.
 
 Features
  Cross-browser visual testing (Chromium, Firefox, WebKit)
