@@ -118,6 +118,11 @@ Percy/Applitools integration
 Parallel cloud execution
 Visual AI comparison
 
+✔ Cross-browser (Chromium, Firefox, WebKit)  
+✔ Mobile + Desktop validation  
+✔ Automated baseline comparison  
+✔ CI-ready architecture 
+
 Author
 Sushma Chiluvuri
 
